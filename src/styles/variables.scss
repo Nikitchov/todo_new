@@ -1,0 +1,39 @@
+:root {
+  // White
+  --white: #FFFFFF;
+
+  // Black
+  --black: #000000;
+
+  // Blue
+  --blue: #1A66FF;
+  --blue-2: #074dcf;
+
+  // Green
+
+  --green: #33CC55;
+
+  // Yellow
+  --yellow: #FFAD33;
+
+  // Red
+  --red: #FF1A35;
+  --red-2: #d8001e;
+
+  // Purple
+  --purple: #9B0FF0;
+
+  // Grey
+  --grey-1: #EEEFF2;
+  --grey-2: #8C95A6;
+  --grey-3: #6F7B90;
+  --grey-4: #424A57;
+
+  // Transition
+  --transition: all 0.3s ease-in-out;
+}
+
+
+[data-theme="dark"] {
+
+}

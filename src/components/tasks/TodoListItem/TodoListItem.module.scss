@@ -1,0 +1,36 @@
+.row {
+  padding: 16px;
+  background-color: var(--white);
+  border-radius: 12px;
+
+  &__edit {
+    display: flex;
+    align-items: center;
+    grid-column-gap: 12px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    background-color: var(--blue);
+    border-radius: 8px;
+
+    transition: var(--transition);
+    color: var(--white);
+
+    &:hover {
+      background-color: var(--blue-2);
+    }
+
+
+    &_danger {
+      background-color: var(--red);
+
+      &:hover {
+        background-color: var(--red-2);
+      }
+    }
+  }
+}

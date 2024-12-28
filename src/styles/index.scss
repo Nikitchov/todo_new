@@ -1,0 +1,23 @@
+// Reset
+@import '_reset.css';
+
+// Variables
+@import "variables";
+
+/* prevents screen shifts when the scrollbar appears */
+html {
+  overflow-x: hidden;
+  margin-right: calc(-1 * (100vw - 100%));
+  background-color: var(--grey-1);
+}
+
+body {
+  font-weight: 400;
+  width: 100%;
+  overflow: clip;
+}
+
+p {
+  word-break: break-word;
+}
+

@@ -1,0 +1,54 @@
+.list {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.head {
+  background-color: #f2f2f2;
+}
+
+.head__cell {
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.id {
+  color: #007bff;
+}
+
+.title {
+  color: #333;
+}
+
+.status {
+  color: #28a745;
+}
+
+.description {
+  color: #555;
+}
+
+.createdAt {
+  color: #888;
+}
+
+.row {
+  &:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  &:hover {
+    background-color: #e0e0e0;
+  }
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.empty {
+  color: gray;
+  text-align: center;
+}
