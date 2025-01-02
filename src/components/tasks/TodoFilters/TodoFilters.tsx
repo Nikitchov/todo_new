@@ -1,9 +1,9 @@
 import classNames from 'classnames';
 
-import type { TodoFiltersProps } from './TodoFilters.types.ts';
+import type { TodoFiltersProps, TodoFilterType } from './TodoFilters.types.ts';
 import s from './TodoFilters.module.scss';
 
-const FILTER_OPTIONS = [
+const FILTER_OPTIONS: { value: TodoFilterType; label: string }[] = [
   { value: 'all', label: 'Все' },
   { value: 'in-progress', label: 'В процессе' },
   { value: 'completed', label: 'Завершенные' },
@@ -16,7 +16,7 @@ export function TodoFilters({
   sortDirection,
   onSortDirectionChange,
 }: TodoFiltersProps) {
-  const handleFilterChange = (newFilter: string) => {
+  const handleFilterChange = (newFilter: TodoFilterType) => {
     onFilterChange(newFilter);
   };
 

@@ -54,7 +54,7 @@ export function TodoPanel({ className }: TodoPanelProps) {
       createdAt: new Date().toISOString(),
     };
 
-    setTodoList((prevTodos: TodoItem[]) => [...prevTodos, newTodo]);
+    setTodoList([...todoList, newTodo]);
   }
 
   return (

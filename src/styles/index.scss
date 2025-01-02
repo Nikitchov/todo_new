@@ -1,8 +1,8 @@
 // Reset
-@import '_reset.css';
+@use '_reset.css';
 
 // Variables
-@import "variables";
+@use "variables";
 
 /* prevents screen shifts when the scrollbar appears */
 html {
@@ -20,4 +20,3 @@ body {
 p {
   word-break: break-word;
 }
-

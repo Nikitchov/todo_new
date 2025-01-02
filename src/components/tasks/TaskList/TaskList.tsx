@@ -26,7 +26,7 @@ export function TaskList({ className, todoList, setTodoList }: TaskListProps) {
     return <div>Ошибка: данные задач недоступны.</div>;
   }
 
-  const isValidTodo = (todo) => {
+  const isValidTodo = (todo: any): todo is TodoItem => {
     return (
       todo &&
       typeof todo.id === 'number' &&
